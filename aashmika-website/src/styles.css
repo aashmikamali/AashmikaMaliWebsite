@@ -16,7 +16,19 @@ cardBack {
     background-color: #AFBCCE; 
 }
 img {
-    padding:5px;
-    border:5px solid #AFBCCE;
-    background-color:#AFBCCE;
+    border-radius: 10px;
  }
+ .bg {
+     background-image: url("https://lh3.googleusercontent.com/frv6KYsoY9AqodtCUK0YWNZZeCWTQ_lIQwoDVfRxcRTO8v8dxH3AIJxqz7z_2y4THbNNhIVQZtLERc7p3Ahs=w1920-h887-rw");
+     /* Full height */
+     height: 100%; 
+
+     /* Center and scale the image nicely */
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+.introCard{
+    background-color: white; 
+    color: #090909;
+}
