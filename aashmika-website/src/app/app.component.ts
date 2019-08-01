@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aashmika Mali';
+  links = ['First', 'Second', 'Third'];
+  activeLink = this.links[0];
+  background = '';
+
+  toggleBackground() {
+    this.background = this.background ? '' : 'secondary';
+  }
 }

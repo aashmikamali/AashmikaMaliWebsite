@@ -1,33 +1,98 @@
 /* You can add global styles to this file, and also import other style files */
-@import '~bootstrap/dist/css/bootstrap.min.css';
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+body { 
+  font-family: Roboto, Arial, sans-serif;
+  margin: 0;
+  background-color: mat-color("accent");
+}
+.basic-container {
+  padding: 30px;
+}
+.version-info {
+  font-size: 8pt;
+  float: right;
+}
+.container{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width:100%;
+ }
+ .mat-tab-label {
+     width: 100%;
+     height: 100%;
+     font-size: 50pt;
+     border-radius: 400px;
+     background-color: mat-color("accent");
+    }
+ .tab{
+    color:"primary";
+    height: 400%;
+}
 div {
     padding-top: 4%;
     padding-right: 4%;
     padding-bottom: 4%;
     padding-left: 4%;
-    background-color: #090909;
+    /* background-color: #090909;  */
 }
+/*
 body {
     background-color: #090909;
     color: #AFBCCE;
     font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
+*/
 cardBack {
     background-color: #AFBCCE; 
 }
+img.profpic2{
+    position:absolute;
+    left:2vw;
+    border-radius: 100%;
+    width:10%;
+    height:24%;
+ }
+ a.contactCons1{
+    position:absolute;
+    border-radius:100%;
+    right:1vw;
+    width:3vw;
+    height:3vw;
+ }
+ a.contactCons2{
+    position:absolute;
+    border-radius:100%;
+    right:6vw;
+    width:3vw;
+    height:3vw;
+ }
+ a.contactCons3{
+    position:absolute;
+    border-radius:100%;
+    right:11vw;
+    width:3vw;
+    height:3vw;
+ }
 img {
     border-radius: 1%;
  }
+ mat-tab.tab{
+    background-color: #090909;
+    color: #AFBCCE;
+    font-family: "Trebuchet MS", Helvetica, sans-serif
+ }
  .bg {
-     background-image: url("https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/skyline.jpg?raw=true");
-     /* Full height */
+
      height: 100%; 
 
-     /* Center and scale the image nicely */
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
  }
+
 .introCard{
     background-color: white; 
     color: #090909;
@@ -38,3 +103,7 @@ h1.size{
 h5.size{
     font-size:2vw;
 }
+/*
+body { margin: 0; }
+*/
+body { margin: 0; }
