@@ -1,0 +1,9 @@
+$my-theme-primary: mat-palette($mat-green);
+$my-theme-primary: mat-palette($mat-amber);
+$my-theme: mat-dark-theme(
+    $my-theme-primary,
+    $my-theme-accent,
+);
+
+@import'./custome-theme';
+@include custom-theme($my-theme);

@@ -2,246 +2,271 @@
 
     <div><button mat-raised-button color="primary">Test</button></div>
   </div> -->
-<my-nav></my-nav>
+<!-- <my-nav></my-nav> -->
+
 <br>
 <br>
-<img class="profpic2" src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/profpic.jpg?raw=true">
-<a href="https://www.linkedin.com/in/aashmika-mali-227ba4126/" class="fa fa-linkedin-square contactCons1" style="font-size:2.5vw;color:#0077B5"></a>
-<a href="https://github.com/aashmikamali" class="fa fa-github-square contactCons2" style="font-size:2.5vw;color:white"></a>
-<a href="https://plus.google.com/+AashmikaMali" class="fa fa-google-plus contactCons3" style="font-size:2.5vw;color:#B23121"></a>
-<!-- make sure to add mytable module from site -->
-<!-- Tab navigation -->
-<mat-tab-group class="tab" color="primary">
+<div>
+  <img class="profpic2"
+    src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/profpic.jpg?raw=true">
+  <a href="https://www.linkedin.com/in/aashmika-mali-227ba4126/" class="fa fa-linkedin-square contactCons1"
+    style="font-size:2.5vw;color:#0077B5"></a>
+  <i class="fa fa-linkedin-square" style="font-size:5vw;color:#090909;visibility: hidden"></i>
+  <a href="https://github.com/aashmikamali" class="fa fa-github-square contactCons2"
+    style="font-size:2.5vw;color:white"></a>
+  <i class="fa fa-linkedin-square" style="font-size:6vw;color:#090909;visibility: hidden"></i>
+  <a href="https://plus.google.com/+AashmikaMali" class="fa fa-google-plus contactCons3"
+    style="font-size:2.5vw;color:#B23121"></a>
+  <!-- Tab navigation -->
+  <!-- <img src="https://www.clipartmax.com/png/middle/146-1469833_wall-colour-polygon-art-deer.png" alt="nvsinvosnvifos"> -->
 
-  <mat-tab label="Home" color="secondary">
-      <div class="card">
-          <div class="introCard" style="font-size:2vw;">
-            <h1 style="font-size:4vw;">Hi!</h1>
-            <p class="title">
-              Check out my projects and experience displayed here!
-            </p>
-        
-            Make sure to check out the following Youtube videos. They display some of the engineering projects I've worked on
-            over the
-            last few years. :)
-          </div>
-        </div>
-  </mat-tab>
-  <mat-tab label="Projects">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title" style="font-size:2vw;">MowAI - Robotic Platform - Dec 2018</h5>
-        <p class="card-text" style="font-size:1vw;">The following three videos explain my latest project, the Claw
-          Machine Bot.
-          This project was the culmination of first year, first term Mechatronics Engineering at Waterloo, and was
-          a
-          creative way
-          to make a machine or system comprising of mechatronic components. It was done through the use of Lego
-          Mindstorms
-          and other materials to build the complete system.
-          <br>
-          • Designed, built, and programmed a robot capable of competing against a user by collecting objects of a
-          certain colour
-          <br>
-          • Created algorithm in C to pick and place a coloured object using EV3 motors, sensors and controllers
-        </p>
-      </div>
+  <!-- <div>
+    <div matRipple [matRippleTrigger]="trigger" class="my-ripple-container">
+      This is the ripple container, but not the trigger element for ripples.
     </div>
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title" style="font-size:2vw;">Claw Machine Bot - Dec 2018</h5>
-        <p class="card-text" style="font-size:1vw;">The following three videos explain my latest project, the Claw
-          Machine Bot.
-          This project was the culmination of first year, first term Mechatronics Engineering at Waterloo, and was
-          a
-          creative way
-          to make a machine or system comprising of mechatronic components. It was done through the use of Lego
-          Mindstorms
-          and other materials to build the complete system.
-          <br>
-          • Designed, built, and programmed a robot capable of competing against a user by collecting objects of a
-          certain colour
-          <br>
-          • Created algorithm in C to pick and place a coloured object using EV3 motors, sensors and controllers
-        </p>
-      </div>
-    </div>
+  
+    <div #trigger></div>
+  </div> -->
 
-    <div class="card-group">
-      <div class="card">
-        <iframe width="100%" height="150%" src="https://www.youtube.com/embed/cvmEfgeaSk4" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:1.5vw;">Free Play Mode</h5>
-          <p class="card-text" style="font-size:.75vw;">This explains and goes through the freeplay mode for the
-            Claw
-            Machine Bot.
-            This mode simulates traditional Claw Machine Gamelplay, in which the user has a certain amount of time
-            to
-            move the
-            claw wherever on the playing field, then drop with the press of a button.
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yIXd927oO-0" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:1.5vw;">Autonomous Mode</h5>
-          <p class="card-text" style="font-size:.75vw;">This explains and goes through the autonomous mode for the
-            Claw
-            Machine Bot.
-            This mode elevates the traditional claw machine by providing an extra challenge of selecting a ball of
-            the
-            correct
-            colour in a short amount of time, whilst playing against the machine!
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YznppbgOHTc" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:1.5vw;">Demo Day - Full Demo</h5>
-          <p class="card-text" style="font-size:.75vw;">This goes through a demo day presentation of the Claw
-            Machine
-            Bot!
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="card-group">
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3L8G3GeqNk0" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:2vw;">Sumo Robot Challenge - Nov 2017</h5>
-          <p class="card-text" style="font-size:1vw;">Robotics 12 Final isp: Designing and assembling a sumo bot
-            that
-            would push out other robots
-            in a ring, based on the use of ultrasonic distance sensors, and IR sensors to detect the lines around
-            the
-            ring.
-            <br>
-            • Created an Arduino based Sumo-bot to compete with other Sumo-bots
-            <br>
-            • Used ultrasonic sensors to detect other robots and IR sensors to sense the outer ring
-            <br>
-            • Optimized mechanical robot design by implementing a conical skirt for defence and PWM drive for
-            optimal
-            position control
-            <br>
-            My robot is the white robot with the circular base, that remains the last one standing!
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O3kmpEEyGTw" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:2vw;">Autonomous Line Tracing Robot - Jan 2017</h5>
-          <p class="card-text" style="font-size:1vw;">Computer engineering 12: Designed, assembled and programmed a
-            robot
-            to achieve functionality.
-            Implemented and fine-tuned control algorithm to increase speed.
-            <br>
-            • Created an Arduino based robot that completed a circuit in the shortest time amongst peers
-            <br>
-            • Implemented line detection using analog values read from LDRs coupled with LEDs
-            <br>
-            • Devised control scheme in Arduino code to maximise speed using analog data from three LDR/LED pairs
-
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/THd2zA7cIZg" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:2vw;">Traffic Light System - Jun 2016</h5>
-          <p class="card-text" style="font-size:1vw;">Computer engineering 11: Designed, assembled and programmed a
-            realistic miniaturized traffic
-            light intersection using Arduino Uno.
-            <br>
-            • Created a realistic traffic light system using servos, LDRs, IR sensors and LEDs, controlled by an
-            Arduino
-            <br>
-            • Filtered ADC inputs by averaging, used PWM to control dimming of street lights/LEDs and to ramp
-            up/down car
-            speed
-            <br>
-            • Implemented a state machine for system control and polled for pedestrian cross-walk button
-
-          </p>
-        </div>
-      </div>
-      <div class="card">
-        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VLvVe2VZnuY" frameborder="0" allow="encrypted-media"
-          allowfullscreen></iframe>
-        <div class="card-body">
-          <h5 class="card-title" style="font-size:2vw;">Whack-a-mole - Jan 2015</h5>
-          <p class="card-text" style="font-size:1vw;">Grade 9 Science project: To demonstrate series and parallel
-            electrical circuits, designed assembled
-            and programmed an arcade style gaming machine.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="card-group">
-      <h1 style="font-size:4vw;">3D Print and Design</h1>
-      <p class="title" style="font-size:2vw;">
-        Here are some of the 3D models and designs I've made and printed using my personal filament printer.
-      </p>
+  <mat-tab-group>
+    <mat-tab label="Home" color="secondary">
       <div class="card">
         <div class="introCard">
-          <h1 style="font-size:4vw;">Ice Bear Phone Stand Holder</h1>
-          <p class="title" style="font-size:2vw;">
-            This phone stand will allow wired charging while holding your phone in both landscape and portrait
-            orientations. It will also hold your phone at a comfortable angle of 65 to 70 degrees.
+          <h1 style="font-size:3vw;">Hi!</h1>
+          <p>
+            Check out my projects and experience displayed here!
           </p>
-          <img src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/3d_bear_image_printed.jpg?raw=true"
-            width=31% height=31%>
-          <img src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/3d_bear_orthographic_views.JPG?raw=true"
-            width=39% height=39%>
-          <img src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/holding_phone_stand.jpeg?raw=true"
-            width=28% height=28%>
-          <p class="body" style="font-size:2vw;">
-            Download the updated STL file here:
-            <a href="https://github.com/aashmikamali/AashmikaMaliWebsite/raw/master/aashmika-website/src/Ice_bear_phone_stand.STL"
-              download>
-              Ice_bear_phone_stand.stl
-            </a>
+
+          Make sure to check out the following Youtube videos. They display some of the engineering projects I've worked
+          on
+          over the
+          last few years.
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Projects">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:2vw;">MowAI - Robotic Platform - Dec 2018</h5>
+          <p class="card-text" style="font-size:1vw;">MowAI is my newest project that incorporates the design of my motor control 
+            circuitry, using the STMF320 microcontroller. The following are some of the tasks I have completed.
+            <br>
+            • Schematic design and layout of board assembly incorporating embedded servo motor control and H-bridge 
+            PWM control for motion using STM32F0 microcontroller
+            <br>
+            • Developed code to implement servo control using potentiometer feedback, I2C and SPI interface to MEMS sensors  
+            <br>
+            • Power supply design and layout for voltage rails with low quiescent current for battery applications using WEBENCH
           </p>
         </div>
       </div>
-    </div>
-    <br>
-    <br>
-    <div class="card">
-      <div class="introCard">
-        <h1 style="font-size:4vw;">A little more about me!</h1>
-        <p class="title" style="font-size:2vw;">
-          Throughout high school, I had the oppurtunity of taking multiple engineering and robotics courses. These
-          helped
-          me realize
-          my interest in robotics, and I chose to further pursue it by joining my school's vex robotics team. Along
-          with
-          engineering,
-          I was able to take many computer science related courses, and develop my skills in java.
-        </p>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:2vw;">Claw Machine Bot - Dec 2018</h5>
+          <p class="card-text" style="font-size:1vw;">The following three videos explain my latest project, the Claw
+            Machine Bot.
+            This project was the culmination of first year, first term Mechatronics Engineering at Waterloo, and was
+            a
+            creative way
+            to make a machine or system comprising of mechatronic components. It was done through the use of Lego
+            Mindstorms
+            and other materials to build the complete system.
+            <br>
+            • Designed, built, and programmed a robot capable of competing against a user by collecting objects of a
+            certain colour
+            <br>
+            • Created algorithm in C to pick and place a coloured object using EV3 motors, sensors and controllers
+          </p>
+        </div>
       </div>
-    </div>
-  </mat-tab>
-  <mat-tab label="Experience"> Content 2 </mat-tab>
-  <mat-tab label="About Me"> Content 3 </mat-tab>
-  <mat-tab label="Contact Me"> Content 3 </mat-tab>
 
-</mat-tab-group>
-<br>
-<p>
+      <div class="card-group">
+        <div class="card">
+          <iframe width="100%" height="150%" src="https://www.youtube.com/embed/cvmEfgeaSk4" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:1.5vw;">Free Play Mode</h5>
+            <p class="card-text" style="font-size:.75vw;">This explains and goes through the freeplay mode for the
+              Claw
+              Machine Bot.
+              This mode simulates traditional Claw Machine Gamelplay, in which the user has a certain amount of time
+              to
+              move the
+              claw wherever on the playing field, then drop with the press of a button.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yIXd927oO-0" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:1.5vw;">Autonomous Mode</h5>
+            <p class="card-text" style="font-size:.75vw;">This explains and goes through the autonomous mode for the
+              Claw
+              Machine Bot.
+              This mode elevates the traditional claw machine by providing an extra challenge of selecting a ball of
+              the
+              correct
+              colour in a short amount of time, whilst playing against the machine!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YznppbgOHTc" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:1.5vw;">Demo Day - Full Demo</h5>
+            <p class="card-text" style="font-size:.75vw;">This goes through a demo day presentation of the Claw
+              Machine
+              Bot!
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-group">
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3L8G3GeqNk0" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:2vw;">Sumo Robot Challenge - Nov 2017</h5>
+            <p class="card-text" style="font-size:1vw;">Robotics 12 Final isp: Designing and assembling a sumo bot
+              that
+              would push out other robots
+              in a ring, based on the use of ultrasonic distance sensors, and IR sensors to detect the lines around
+              the
+              ring.
+              <br>
+              • Created an Arduino based Sumo-bot to compete with other Sumo-bots
+              <br>
+              • Used ultrasonic sensors to detect other robots and IR sensors to sense the outer ring
+              <br>
+              • Optimized mechanical robot design by implementing a conical skirt for defence and PWM drive for
+              optimal
+              position control
+              <br>
+              My robot is the white robot with the circular base, that remains the last one standing!
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/O3kmpEEyGTw" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:2vw;">Autonomous Line Tracing Robot - Jan 2017</h5>
+            <p class="card-text" style="font-size:1vw;">Computer engineering 12: Designed, assembled and programmed a
+              robot
+              to achieve functionality.
+              Implemented and fine-tuned control algorithm to increase speed.
+              <br>
+              • Created an Arduino based robot that completed a circuit in the shortest time amongst peers
+              <br>
+              • Implemented line detection using analog values read from LDRs coupled with LEDs
+              <br>
+              • Devised control scheme in Arduino code to maximise speed using analog data from three LDR/LED pairs
+
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/THd2zA7cIZg" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:2vw;">Traffic Light System - Jun 2016</h5>
+            <p class="card-text" style="font-size:1vw;">Computer engineering 11: Designed, assembled and programmed a
+              realistic miniaturized traffic
+              light intersection using Arduino Uno.
+              <br>
+              • Created a realistic traffic light system using servos, LDRs, IR sensors and LEDs, controlled by an
+              Arduino
+              <br>
+              • Filtered ADC inputs by averaging, used PWM to control dimming of street lights/LEDs and to ramp
+              up/down car
+              speed
+              <br>
+              • Implemented a state machine for system control and polled for pedestrian cross-walk button
+
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/VLvVe2VZnuY" frameborder="0"
+            allow="encrypted-media" allowfullscreen></iframe>
+          <div class="card-body">
+            <h5 class="card-title" style="font-size:2vw;">Whack-a-mole - Jan 2015</h5>
+            <p class="card-text" style="font-size:1vw;">Grade 9 Science project: To demonstrate series and parallel
+              electrical circuits, designed assembled
+              and programmed an arcade style gaming machine.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <h1 style="font-size:4vw;">3D Print and Design</h1>
+        <p class="title" style="font-size:2vw;">
+          Here are some of the 3D models and designs I've made and printed using my personal filament printer.
+        </p>
+        <div class="card">
+          <div class="introCard">
+            <h1 style="font-size:4vw;">Ice Bear Phone Stand Holder</h1>
+            <p class="title" style="font-size:2vw;">
+              This phone stand will allow wired charging while holding your phone in both landscape and portrait
+              orientations. It will also hold your phone at a comfortable angle of 65 to 70 degrees.
+            </p>
+            <img
+              src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/3d_bear_image_printed.jpg?raw=true"
+              width=31% height=31%>
+            <img
+              src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/3d_bear_orthographic_views.JPG?raw=true"
+              width=39% height=39%>
+            <img
+              src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/holding_phone_stand.jpeg?raw=true"
+              width=28% height=28%>
+            <p class="body" style="font-size:2vw;">
+              Download the updated STL file here:
+              <a href="https://github.com/aashmikamali/AashmikaMaliWebsite/raw/master/aashmika-website/src/Ice_bear_phone_stand.STL"
+                download>
+                Ice_bear_phone_stand.stl
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <br>
+    </mat-tab>
+    <mat-tab label="Experience">
+      <div class="card"> Under Construction!!
+      </div>
+    </mat-tab>
+    <mat-tab label="About Me">
+      <div class="card">
+        <div class="introCard">
+          <h1 style="font-size:4vw;">A little more about me!</h1>
+          <p class="title" style="font-size:2vw;">
+            Throughout high school, I had the oppurtunity of taking multiple engineering and robotics courses. These
+            helped
+            me realize
+            my interest in robotics, and I chose to further pursue it by joining my school's vex robotics team. Along
+            with
+            engineering,
+            I was able to take many computer science related courses, and develop my skills in java.
+          </p>
+        </div>
+      </div>
+    </mat-tab>
+    <mat-tab label="Contact Me">
+
+      <div class="card"> Under Construction!!
+      </div>
+    </mat-tab>
+
+  </mat-tab-group>
+  <br>
+  <p>
     Made with Angular
     <a class="fa fa-angular" style="font-size:2vw;color:white"></a> <!-- angular icon does not exist -->
   </p>
+</div>

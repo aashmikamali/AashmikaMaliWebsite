@@ -3,7 +3,10 @@
 body { 
   font-family: Roboto, Arial, sans-serif;
   margin: 0;
-  background-color: mat-color("accent");
+  background-color: #090909;
+  color: #090909;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  margin: 0; 
 }
 .basic-container {
   padding: 30px;
@@ -20,16 +23,19 @@ body {
     height: 500px;
     width:100%;
  }
+
  .mat-tab-label {
      width: 100%;
      height: 100%;
-     font-size: 50pt;
+     font-size: 1vw;
      border-radius: 400px;
-     background-color: mat-color("accent");
     }
  .tab{
     color:"primary";
     height: 400%;
+}
+.p{
+    font-size: 3vw;
 }
 div {
     padding-top: 4%;
@@ -38,41 +44,65 @@ div {
     padding-left: 4%;
     /* background-color: #090909;  */
 }
-/*
-body {
-    background-color: #090909;
-    color: #AFBCCE;
-    font-family: "Trebuchet MS", Helvetica, sans-serif;
+.mat-tab-label {
+    /* min-width: 25px !important; */
+    padding: 5px;
+    /* background-color: transparent; */
+    color: #6A6DF7;
+    font-weight: 1000;
 }
-*/
+
+.example-ripple-container {
+    cursor: pointer;
+    text-align: center;
+  
+    width: 300px;
+    height: 300px;
+    line-height: 300px;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .example-ripple-checkbox {
+  margin: 6px 12px 6px 0;
+}
+
+.example-ripple-form-field {
+  margin: 0 12px 0 0;
+}
 cardBack {
     background-color: #AFBCCE; 
 }
 img.profpic2{
     position:absolute;
-    left:2vw;
+    left:4vw;
     border-radius: 100%;
-    width:10%;
-    height:24%;
+    width:12vw;
+    height:14vw;
  }
  a.contactCons1{
     position:absolute;
     border-radius:100%;
-    right:1vw;
+    right:3vw;
     width:3vw;
     height:3vw;
  }
  a.contactCons2{
     position:absolute;
     border-radius:100%;
-    right:6vw;
+    right:9vw;
     width:3vw;
     height:3vw;
  }
  a.contactCons3{
     position:absolute;
     border-radius:100%;
-    right:11vw;
+    right:15.5vw;
     width:3vw;
     height:3vw;
  }
@@ -94,6 +124,7 @@ img {
  }
 
 .introCard{
+    font-size: 1.5vw;
     background-color: white; 
     color: #090909;
 }
@@ -106,4 +137,4 @@ h5.size{
 /*
 body { margin: 0; }
 */
-body { margin: 0; }
+/* body { margin: 0; } */

@@ -1,0 +1,10 @@
+@import 'angular/material/theming';
+
+@mixin nav-bar-theme($theme){
+    $primary: map-get($theme, primary);
+
+    mat-sidenav {
+        background-color: mat-get($primary);
+    }
+    
+}
