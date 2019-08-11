@@ -14,5 +14,25 @@
 </head>
 <body>
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+  apiKey: "AIzaSyD0HAZJKieHSjKFf1_tBbY9IJmBN44V1K4",
+  authDomain: "aashmika-website.firebaseapp.com",
+  databaseURL: "https://aashmika-website.firebaseio.com",
+  projectId: "aashmika-website",
+  storageBucket: "",
+  messagingSenderId: "330065296005",
+  appId: "1:330065296005:web:f9653b2b3870b76d"
+};
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 </html>

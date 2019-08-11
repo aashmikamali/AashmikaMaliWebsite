@@ -3,12 +3,16 @@
     <div><button mat-raised-button color="primary">Test</button></div>
   </div> -->
 <!-- <my-nav></my-nav> -->
-
+<ul>
+  <li class="text" *ngFor="let item of items | async">
+    {{item.name}}
+  </li>
+</ul>
 <br>
 <br>
 <div>
   <img class="profpic2"
-    src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/profpic.jpg?raw=true">
+    src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/app/profpic.jpg?raw=true">
     <img class="name"
     src="https://github.com/aashmikamali/AashmikaMaliWebsite/blob/master/aashmika-website/src/app/images/Name.png?raw=true">
   <a href="https://www.linkedin.com/in/aashmika-mali-227ba4126/" class="fa fa-linkedin-square contactCons1"
@@ -19,7 +23,7 @@
   <i class="fas fa-linkedin-square" style="font-size:6vw;color:#090909;visibility: hidden"></i>
   <a href="mailto:aashmikamali@gmail.com? subject=subject text" class="fa fa-envelope contactCons3"
     style="font-size:2.5vw;color:#B23121"></a>
-  <i class="fas fa-dragon dragon" style="font-size:5vw;color:#6A6DF7"></i>
+  <i class="fas fa-dragon dragon" style="font-size:8.5vw;color:#AFBCCE"></i>
   <!-- Tab navigation -->
   <!-- <img src="https://www.clipartmax.com/png/middle/146-1469833_wall-colour-polygon-art-deer.png" alt="nvsinvosnvifos"> -->
 
@@ -31,19 +35,14 @@
     <div #trigger></div>
   </div> -->
 <img>
-  <mat-tab-group>
-    <mat-tab label="Home" color="secondary">
-      <div class="card">
+  <mat-tab-group dynamicHeight="true">
+    <mat-tab label="Home">
+      <div class="card " style="margin-bottom: 0;margin-top: 0">
         <div class="introCard">
           <h1 style="font-size:3vw;">Hi!</h1>
           <p>
-            Check out my projects and experience displayed here!
+            Check out some of my projects and experience displayed on this site.
           </p>
-
-          Make sure to check out the following Youtube videos. They display some of the engineering projects I've worked
-          on
-          over the
-          last few years.
         </div>
       </div>
     </mat-tab>
@@ -241,35 +240,134 @@
       <br>
     </mat-tab>
     <mat-tab label="Experience">
-      <div class="card"> Under Construction!!
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title" style="font-size:2vw;">Magna - Hardware Engineering Coop</h5>
+              <p class="card-text" style="font-size:1vw;"> My term at Magna Mechatronics Mirrors and Lighting as part of the new
+                technology and innovation department was a valuable experience with a chance to demonstrate my design experience. 
+                In addition to developing the layouts for a couple board, I was able to solder to a much higher standard and smaller
+                package size (0402) and gain experience in harnessing and electrical prototyping. The following lists some of the 
+                tasks I accomplished at Magna:
+                <br>
+                • Schematic design and board layout in Altium for embedded micro-force sensing in automotive applications and 
+                USB to UART interface using FTDI IC
+                <br>
+                • Assembled, tested and troubleshot PCBs with surface mount components and 0402 passives  
+                <br>
+                • Designed and assembled wiring harnesses based on current ratings
+                <br>
+                • Wrote test code and drivers in C to support board bring-up
+                 <br>
+                • Developed application software on Arduino and created board prototype to implement PWM control by driving FETs
+                <br>
+                • Used multimeter, power supply, signal generator, oscilloscope and thermal imager to bring-up and troubleshoot
+                 board assemblies
+                 <br>
+                • Configured radar SDK on raspberry pi to evaluate range and limitations of obstacle, gesture and biometrics detection
+                <br>
+                • Managed and executed parts procurement, organized and updated inventory
+                <br>
+                <br>
+              </p>
+            </div>
+          </div>
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title" style="font-size:2vw;">Midnight Sun Solar Car Team - Hardware Team - Dec 2018</h5>
+          <p class="card-text" style="font-size:1vw;"> As part of the univerity of Waterloo's solar car team, I help
+            design the circuitry involved with the battery managment, power distribution and driver controls of our
+            car. Competing in FSGP 2020 will be MS-XIV - A 5 seater solar car - and our newest addition Midngiht Sun.
+            The following are some of the things I have done on the team.
+            <br>
+            • Designed, assembled and tested boards for driver controls and power distribution 
+            <br>
+            • Implemented EMI filter circuitry for driver control interface boards 
+            <br>
+            • Placed third in multi-occupant category at the Formula Sun Grand-Prix
+            <br>
+            • Worked on wiring harnesses, troubleshooting and assembling PCBs during competition to pass scrutineering
+             of mechanical and electrical functionality
+             <br>
+            • Updated and maintained component/diagrams for git version controlled Altium libraries
+          </p>
+        </div>
       </div>
     </mat-tab>
     <mat-tab label="About Me">
       <div class="card">
-        <div class="introCard">
+        <div style="font-size:1vw;">
           <h1 style="font-size:2.5vw;">A little more about me!</h1>
-          <p class="title" style="font-size:1.5vw;">
-            Throughout high school, I had the oppurtunity of taking multiple engineering and robotics courses. These
-            helped
-            me realize
-            my interest in robotics, and I chose to further pursue it by joining my school's vex robotics team. Along
-            with
-            engineering,
-            I was able to take many computer science related courses, and develop my skills in java.
-          </p>
+            <br>
+            <h2 style="font-size:1.5vw;">Technical Skills</h2>            
+            The following outlines some of the technical skills I have picked up completing my projects and learning through my work experience.
+            <br>
+            <br>
+            <h3 style="font-size:1vw;">Programming Skills</h3>            
+            • C
+            <br>
+            • C++ 
+            <br>
+            • Java
+            <br>
+            • HTML, CSS, Javascript, Angular
+            <br>
+            • SQL
+            <br>            
+            • Python
+            <br>
+            • Git
+            <br>
+            <br>
+            <h3 style="font-size:1vw;">Hardware Skills</h3>            
+            • Altium
+            <br>
+            • Soldering 
+            <br>
+            • LTSpice
+            <br>
+            • PCB Assembly and Reflow
+            <br>
+            • Circuit Design
+            <br>
+            • Lab Equipment: 
+            <br>
+            - Multimeter
+            <br>
+            - Oscilloscope
+            <br>
+            - Power supply
+            <br>
+            - Signal Generator
+            <br>
+            <br>          
+            <h3 style="font-size:1vw;">Design Skills</h3>            
+            • Solidworks
+            <br>
+            • AutoCAD 
+            <br>
+            • GrabCAD
+            <br>
+            • Blender
+            <br>
+            <br>
+            <h2 style="font-size:1.5vw;">Midnight Sun</h2>            
+            Being on the hardware team on Midnight Sun Solar car team has been an amazing way to experience the ingenuity of
+            hardware engineering, and help build an electric car from scratch! Our last competition in Austin, Texas at the 
+            Circuit of the Americas was an amazing time and a true test of troubleshooting and perseverence. Checkout https://www.uwmidsun.com/
+            to peek at MS-14 our newest addition under development!
         </div>
       </div>
     </mat-tab>
     <mat-tab label="Contact Me">
 
-      <div class="card"> Under Construction!!
+      <div class="card"> Check out my github, linkedin or email me using the icons in the top right corner!
       </div>
     </mat-tab>
 
   </mat-tab-group>
   <br>
-  <p>
+  <p style="color:#AFBCCE">
     Site design and developement by Aashmika Mali | Copyright © 2019 Aashmika Mali | Made with Angular
-    <a class="fab fa-angular" style="font-size:1vw;color:#AFBCCE"></a> <!-- angular icon does not exist -->
+    <a class="fab fa-angular" style="font-size:2vw;color:#AFBCCE"></a> <!-- angular icon does not exist -->
   </p>
 </div>

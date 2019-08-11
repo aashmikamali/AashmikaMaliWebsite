@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {NgxFsModule} from 'ngx-fs';
 
 import { AppComponent } from './app.component';
-
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatRadioModule} from '@angular/material/radio';
@@ -24,6 +24,13 @@ import { ThirdPageComponent } from './third-page/third-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material';
 import { MatRippleModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule, MatInputModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatSelectModule, MatSidenavModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import { AngularFireModule } from '@angular/fire';
+import { environment } from '../environments/environment';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+// import { AngularFirePerformanceModule } from '@angular/fire/performance';
+
 
 const appRoutes: Routes = [
   { path: 'fifrst-page', component: FirstPageComponent }, //supposed to be first-page
@@ -37,6 +44,8 @@ const globalRippleConfig: RippleGlobalOptions = {
     exitDuration: 0
   }
 };
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -48,6 +57,9 @@ const globalRippleConfig: RippleGlobalOptions = {
   ],
   imports: [
     BrowserModule,
+    NgxFsModule,
+    AngularFireModule.initializeApp(environment.firebase, 'aashmika-website'),
+    // AngularFirePerformanceModule,
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatCheckboxModule,
@@ -84,7 +96,10 @@ const globalRippleConfig: RippleGlobalOptions = {
     LayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    MatRippleModule
+    MatRippleModule,
+    AngularFirestoreModule, // imports firebase/firestore, only needed for database features
+    AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
+    AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
   providers: [
     {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig}
