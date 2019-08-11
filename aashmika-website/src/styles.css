@@ -28,10 +28,10 @@ body {
  .mat-tab-label {
      width: 100%;
      height: 100%;
-     font-size: 1vw;
+     font-size: 1.75vw;
      border-radius: 400px;
     /* min-width: 25px !important; */
-    padding: 5px;
+    padding: 0px;
     /* background-color: transparent; */
     color: #AFBCCE;
     font-weight: 10;
