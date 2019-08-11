@@ -37,14 +37,6 @@ const appRoutes: Routes = [
   { path: 'second-page', component: SecondPageComponent },
   { path: 'third-page', component: ThirdPageComponent }
 ];
-const globalRippleConfig: RippleGlobalOptions = {
-  disabled: true,
-  animation: {
-    enterDuration: 300,
-    exitDuration: 0
-  }
-};
-
 
 @NgModule({
   declarations: [
@@ -101,9 +93,7 @@ const globalRippleConfig: RippleGlobalOptions = {
     AngularFireAuthModule, // imports firebase/auth, only needed for auth features,
     AngularFireStorageModule // imports firebase/storage only needed for storage features
   ],
-  providers: [
-    {provide: MAT_RIPPLE_GLOBAL_OPTIONS, useValue: globalRippleConfig}
-  ],
+  providers: [  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
