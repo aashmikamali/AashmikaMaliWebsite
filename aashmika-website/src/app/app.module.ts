@@ -22,10 +22,7 @@ import { FirstPageComponent } from './first-page/first-page.component';
 import { SecondPageComponent } from './second-page/second-page.component';
 import { ThirdPageComponent } from './third-page/third-page.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MAT_RIPPLE_GLOBAL_OPTIONS, RippleGlobalOptions } from '@angular/material';
 import { MatRippleModule, MatAutocompleteModule, MatButtonModule, MatButtonToggleModule, MatCardModule, MatCheckboxModule, MatChipsModule, MatDatepickerModule, MatDialogModule, MatExpansionModule, MatFormFieldModule, MatGridListModule, MatIconModule, MatInputModule, MatMenuModule, MatNativeDateModule, MatPaginatorModule, MatProgressSpinnerModule, MatSelectModule, MatSidenavModule, MatSlideToggleModule, MatSnackBarModule, MatSortModule, MatTableModule, MatToolbarModule } from '@angular/material';
-import { AngularFireModule } from '@angular/fire';
-import { environment } from '../environments/environment';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireStorageModule } from '@angular/fire/storage';
 import { AngularFireAuthModule } from '@angular/fire/auth';
@@ -50,9 +47,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     NgxFsModule,
-    AngularFireModule.initializeApp(environment.firebase, 'aashmika-website'),
-    // AngularFirePerformanceModule,
-    RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     MatCheckboxModule,
     MatCheckboxModule,
@@ -97,4 +91,3 @@ const appRoutes: Routes = [
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-platformBrowserDynamic().bootstrapModule(AppModule);
