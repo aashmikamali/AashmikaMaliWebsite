@@ -96,8 +96,6 @@ THE SOFTWARE.
 
 @angular/material/button
 
-@angular/material/card
-
 @angular/material/datepicker
 
 @angular/material/dialog
@@ -109,9 +107,6 @@ THE SOFTWARE.
 @angular/material/tooltip
 
 @angular/platform-browser
-MIT
-
-@angular/router
 MIT
 
 @firebase/app
