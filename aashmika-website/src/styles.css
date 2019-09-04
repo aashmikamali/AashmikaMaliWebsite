@@ -123,7 +123,21 @@ img {
     background-color: #090909;
     color: #AFBCCE;
     font-family: "Trebuchet MS", Helvetica, sans-serif
+    
  }
+ 
+ .mat-tab-list{
+  padding: 0px;
+  
+}
+
+.mat-tab-label-container{
+  padding-bottom: 0px;
+}
+
+.mat-tab-label-container{
+  padding: 1vm;
+}
  .bg {
 
      height: 100%; 
